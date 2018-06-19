@@ -23,9 +23,10 @@ target 'AppCenterSample' do
   #pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   # Pods for AppCenter
-  pod 'AppCenter/Crashes', '~> 1.6.0'
-  pod 'AppCenter/Analytics', '~> 1.6.0'
-  pod 'AppCenterReactNativeShared', '~> 1.5.0'
+  #pod 'AppCenter/Crashes', '~> 1.6.0'
+  #pod 'AppCenter/Analytics', '~> 1.6.0'
+  #pod 'AppCenterReactNativeShared', '~> 1.5.0'
+    
 
   platform :ios, '9.0'
 end
@@ -34,5 +35,17 @@ use_frameworks! # required for projects with Swift sources
 
 target 'AppCenterSampleUITests' do 
   pod 'AppCenterXCUITestExtensions', '1.0.0'
+  pod 'AFNetworking', '2.6.3'
+pod 'Fabric'
+pod 'Crashlytics'
+pod 'Toast', '~> 4.0.0'
+pod 'SVProgressHUD'
+pod 'SAMKeychain'
+pod 'MobihelpSDK', '1.6.5'
+pod 'Realm'
+pod 'JVFloatLabeledTextField'
+pod 'MZAppearance'
+pod 'AppCenter'
+    
 end
 
