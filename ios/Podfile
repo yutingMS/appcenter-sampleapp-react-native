@@ -1,0 +1,33 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+plugin 'cocoapods-keys', {
+       :project => 'm360Cards',
+       :target => 'm360Cards',
+       :keys => [
+       "kAPIUserScope",
+       "kLoginBaseURL",
+       "kAPIScope",
+       "kAPIClientId",
+       "kAPIClientSecret",
+       "kAPIGrantType",
+       "kPasswordBaseURL",
+       "kMoney360BaseURL"
+   ]
+}
+
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+target "m360Cards" do
+    pod 'AFNetworking', '2.6.3'
+    pod 'Fabric'
+    pod 'Crashlytics'
+    pod 'Toast', '~> 4.0.0'
+    pod 'SVProgressHUD'
+    pod 'SAMKeychain'
+    pod 'MobihelpSDK', '1.6.5'
+    pod 'Realm'
+    pod 'JVFloatLabeledTextField'
+    pod 'MZAppearance'
+    pod 'AppCenter'
+end
