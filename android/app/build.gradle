@@ -113,7 +113,7 @@ android {
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
-        flavorDimensions "version"
+
         productFlavors {
             dev {
                 applicationId "com.cathaypacific.ecrs.dev"
@@ -123,14 +123,7 @@ android {
                 applicationId "com.cathaypacific.ecrs.ete"
                 buildConfigField "String", "serverEnvironment", '".ete"'
             }
-            liveuat {
-                applicationId "com.cathaypacific.ecrs.liveuat"
-                buildConfigField "String", "serverEnvironment", '".liveuat"'
-            }
-            prod {
-                applicationId "com.cathaypacific.ecrs.prod"
-                buildConfigField "String", "serverEnvironment", '""'
-            }
+ 
         }
     }
 
