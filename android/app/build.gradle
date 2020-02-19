@@ -113,7 +113,7 @@ android {
         ndk {
             abiFilters "armeabi-v7a", "x86"
         }
-        flavorDimensions "version"
+
         productFlavors {
             dev {
                 applicationId "com.cathaypacific.ecrs.dev"
